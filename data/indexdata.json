@@ -1,34 +1,34 @@
 [
   {
-    "img": "./img/Djerba.jpg",
+    "img": "https://github.com/mohamed-Amine-Azaiez/framework/tree/main/data/img/Djerba.jpg",
     "location": "Djerba"
   },
   {
-    "img": "./img/Medenine.jpg",
+    "img": "https://github.com/mohamed-Amine-Azaiez/framework/tree/main/data/img/Medenine.jpg",
     "location": "Medenine"
   },
   {
-    "img": "./img/Zaghouan.jpg",
+    "img": "https://github.com/mohamed-Amine-Azaiez/framework/tree/main/data/img/Zaghouan.jpg",
     "location": "Zaghouan"
   },
   {
-    "img": "./img/Nabeul.jpg",
+    "img": "https://github.com/mohamed-Amine-Azaiez/framework/tree/main/data/img/Nabeul.jpg",
     "location": "Nabeul"
   },
   {
-    "img": "./img/Kairouan.jpg",
+    "img": "https://github.com/mohamed-Amine-Azaiez/framework/tree/main/data/img/Kairouan.jpg",
     "location": "Kairouan"
   },
   {
-    "img": "./img/Bizerte.jpg",
+    "img": "https://github.com/mohamed-Amine-Azaiez/framework/tree/main/data/img/Bizerte.jpg",
     "location": "Bizerte"
   },
   {
-    "img": "./img/Jendouba.jpg",
+    "img": "https://github.com/mohamed-Amine-Azaiez/framework/tree/main/data/img/Jendouba.jpg",
     "location": "Jendouba"
   },
   {
-    "img": "./img/Soussa.jpg",
+    "img": "https://github.com/mohamed-Amine-Azaiez/framework/tree/main/data/img/Soussa.jpg",
     "location": "Soussa"
   }
 ]
