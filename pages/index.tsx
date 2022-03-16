@@ -51,7 +51,7 @@ export async function getStaticProps() {
   const exploreData = await fetch('https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/indexdata.json').then(
     (res) => res.json()
   )
-  const cardsData = await fetch('https://links.papareact.com/zp1').then(
+  const cardsData = await fetch('https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/indexbigcards.json').then(
     (res) => res.json()
   )
   return {
