@@ -48,7 +48,7 @@ export default function Home({ exploreData, cardsData }) {
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch('https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/indexdata.json?token=GHSAT0AAAAAABRHDGUH36ODOOOAQJQB6GYSYRRYRGQ').then(
+  const exploreData = await fetch('https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/indexdata.json').then(
     (res) => res.json()
   )
   const cardsData = await fetch('https://links.papareact.com/zp1').then(
