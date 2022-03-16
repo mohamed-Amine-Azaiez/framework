@@ -1,42 +1,35 @@
 [
   {
-    "img": "https://links.papareact.com/5j2",
-    "location": "London",
-    "distance": "45-minute drive"
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Djerba.jpg",
+    "location": "Djerba"
   },
   {
-    "img": "https://links.papareact.com/1to",
-    "location": "Manchester",
-    "distance": "4.5-hour drive"
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Medenine.jpg",
+    "location": "Medenine"
   },
   {
-    "img": "https://links.papareact.com/40m",
-    "location": "Liverpool",
-    "distance": "4.5-hour drive"
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Zaghouan.jpg",
+    "location": "Zaghouan"
   },
   {
-    "img": "https://links.papareact.com/msp",
-    "location": "York",
-    "distance": "4-hour drive"
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Nabeul.jpg",
+    "location": "Nabeul"
   },
   {
-    "img": "https://links.papareact.com/2k3",
-    "location": "Cardiff",
-    "distance": "45-minute drive"
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Kairouan.jpg",
+    "location": "Kairouan"
   },
   {
-    "img": "https://links.papareact.com/ynx",
-    "location": "Birkenhead",
-    "distance": "4.5-hour drive"
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Bizerte.jpg",
+    "location": "Bizerte"
   },
   {
-    "img": "https://links.papareact.com/kji",
-    "location": "Newquay",
-    "distance": "6-hour drive"
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Jendouba.jpg",
+    "location": "Jendouba"
   },
   {
-    "img": "https://links.papareact.com/41m",
-    "location": "Hove",
-    "distance": "2-hour drive"
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Soussa.jpg",
+    "location": "Soussa"
   }
+
 ]
