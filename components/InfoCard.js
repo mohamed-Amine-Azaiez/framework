@@ -1,9 +1,20 @@
 import { HeartIcon } from "@heroicons/react/outline"
 import { StarIcon } from "@heroicons/react/solid"
 import Image from "next/image"
-function InfoCard({img,location,title,description,start,price,total,star}) {
+function InfoCard({img,location,title,description,start,price,star,id}) {
+
+
+  const moreinfo = () => {
+    router.push({
+      pathname:"/rondo",
+      query:{
+        id:id
+      },
+    })
+  }
+
   return (
-    <div className="flex py-7 px-2 border-b cursor-pointer hover:opacity-80 hover:shadow-lg transition duration-200 ease-out first:border-t">
+    <div onClick={moreinfo} className="flex py-7 px-2 border-b cursor-pointer hover:opacity-80 hover:shadow-lg transition duration-200 ease-out first:border-t">
       <div className="relative h-24 w-40 md:h-52 md:w-80 flex-shrink-0">
         <Image src={img} layout="fill" objectFit="cover" className="rounded-2xl" />
       </div>
@@ -21,7 +32,7 @@ function InfoCard({img,location,title,description,start,price,total,star}) {
           </p>
           <div>
             <p className="text-lg font-semibold pb-2 lg:text-2xl">{price}</p>
-            <p className="text-right font-extralight">{total}</p>
+            
           </div>
 
         </div>

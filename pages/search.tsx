@@ -10,6 +10,11 @@ function search({ searchResults }) {
   const formattedStartDate = format(new Date(startDate), 'dd/MM/yyyy')
   const formattedEndDate = format(new Date(endDate), 'dd/MM/yyyy')
   const range = `${formattedStartDate} - ${formattedEndDate}`
+
+
+  
+
+
   return (
     <div>
       <Header placeholder={` ${location} | $(range) | ${noOfGuests}  guests`} />
@@ -30,8 +35,8 @@ function search({ searchResults }) {
           </div>
 
           <div className='flex flex-col'>
-          {searchResults.map(({img,location,title,description,start,price,total,star}) => (
-            <InfoCard img={img} location={location} title={title} description={description} start={start} price={price} total={total} star={star} />
+          {searchResults.map(({img,location,title,description,start,price,total,star,id}) => (
+            <InfoCard img={img} location={location} title={title} description={description} start={start} price={price} star={star} id={id} />
           ))}
           </div>
         </section>
