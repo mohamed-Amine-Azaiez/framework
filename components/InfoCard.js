@@ -1,14 +1,16 @@
 import { HeartIcon } from "@heroicons/react/outline"
 import { StarIcon } from "@heroicons/react/solid"
 import Image from "next/image"
-function InfoCard({img,location,title,description,start,price,star,id}) {
+import {useRouter} from "next/dist/client/router"
 
+function InfoCard({img,location,title,description,start,price,star,id}) {
+  const router = useRouter();
 
   const moreinfo = () => {
     router.push({
-      pathname:"/rondo",
+      pathname:"/info",
       query:{
-        id:id
+        idr:id
       },
     })
   }

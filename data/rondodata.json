@@ -12,6 +12,7 @@
     "price": "45 TND "
   },
   {
+    "id":2,
     "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Medenine.jpg",
     "location": "Medenine",
     "title": "Circuit randonnée Toujane",

@@ -15,7 +15,7 @@ export default function Home({ exploreData, cardsData }) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      <Header placeholder={""} />
       <Banner img={bg1} />
       <main className="mx-auto max-w-7xl px-8 sm:px-16">
         <section className="pt-6">
