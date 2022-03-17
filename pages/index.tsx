@@ -5,6 +5,8 @@ import SmallCard from '../components/SmallCard'
 import MediumCard from '../components/MediumCard'
 import LargeCard from '../components/LargeCard'
 import Footer from '../components/Footer'
+import bg2 from "../data/img/bg2.jpg"
+import bg1 from "../data/img/bg1.png"
 
 export default function Home({ exploreData, cardsData }) {
   return (
@@ -14,7 +16,7 @@ export default function Home({ exploreData, cardsData }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Banner />
+      <Banner img={bg1} />
       <main className="mx-auto max-w-7xl px-8 sm:px-16">
         <section className="pt-6">
           <h2 className="text-4xl font-semibold"> Explore Nearby</h2>
@@ -39,7 +41,7 @@ export default function Home({ exploreData, cardsData }) {
           </div>
         </section>
         <section></section>
-        <LargeCard img={"https://links.papareact.com/4cj"} title="You Don't Know Where To Go ?" description="" buttonText="Get Inspired" />
+        <LargeCard img={bg2} title="You Don't Know Where To Go ?" description="" buttonText="Get Inspired" />
       </main>
       <Footer  />
       
@@ -48,7 +50,7 @@ export default function Home({ exploreData, cardsData }) {
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch('https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/indexdata.json').then(
+  const exploreData = await fetch("https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/indexdata.json").then(
     (res) => res.json()
   )
   const cardsData = await fetch('https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/indexbigcards.json').then(

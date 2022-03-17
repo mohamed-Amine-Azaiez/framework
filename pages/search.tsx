@@ -44,7 +44,7 @@ function search({ searchResults }) {
 export default search;
 
 export async function getServerSideProps() {
-  const searchResults = await fetch('https://links.papareact.com/isz').then(
+  const searchResults = await fetch('https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/rondodata.json').then(
     (res) => res.json()
   );
   return {
