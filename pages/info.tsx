@@ -46,7 +46,7 @@ function info({ rondoinfo }) {
                   })
                 })}
 
-              <div className="-ml-3 flex flex-wrap space-x-3 break-normal w-4/5 m-auto md:m-auto">
+              <div className="-ml-3 flex flex-wrap space-x-3 break-normal w-4/5 m-auto md:m-auto pt-2">
                 {rimg.map((item) => (
                   <MediumCard img={item} title={''} />
                 ))}
