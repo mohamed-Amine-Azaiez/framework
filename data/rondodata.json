@@ -9,7 +9,9 @@
       "p2":"L’île est sillonnée de pistes et de petites routes. Les parcourir à pied est un bon moyen de faire connaissance avec le patrimoine traditionnel de l’île.",
       "p3":"Traditionnellement, Djerba est une région d’habitat dispersé. Cela signifie que la présence humaine est partout, et nulle part. Tout au long de votre chemin, vous apprécierez la sérénité de paysages silencieux, préservés et pleins de charme. Vous rencontrerez de superbes propriétés rurales à l’abandon, des petites mosquées émouvantes de simplicité, des champs d’oliviers centenaires… mais aussi des habitants qui seront ravis d’échanger quelques mots, ou de vous raconter l’histoire d’un saint local.",
       "star": 4.73,
-      "price": "45 TND "
+      "price": "45 TND ",
+      "url":"https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Djerba/",
+      "images":["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg"]
     },
     {
       "id":2,
