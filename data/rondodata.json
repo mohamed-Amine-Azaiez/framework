@@ -23,19 +23,25 @@
       "p2":"Le territoire de la ville de Médenine est délimité par le gouvernorat de Gabès, Sidi Makhlouf et la mer Méditerranée au nord, Beni Khedache à l'ouest, Ben Gardane à l'est et le gouvernorat de Tataouine au sud.",
       "p3":"Le circuit randonnée Toujane ne peut démarrer qu’après un petit déjeuner copieux, entre pain traditionnel, miel et figue séchée. Notre randonnée débute d’un petit village nommé « Chwamikh », à partir duquel commençait notre randonnée vers « Toujane ».",
       "star": 4.73,
-      "price": "45 TND "
+      "price": "45 TND ",
+      
+      "url":"https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Medenine/",
+      "images":["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg"]
     },
     {
       "id":3,
       "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Zaghouan.jpg",
-      "location": "Zaghouen",
+      "location": "Zaghouan",
       "title": "Randonnée et Tyrolienne à Zaghouan",
       "description": " Zaghouan est une ville calme, où il fait bon vivre.",
       "p1":"la ville domine une vaste plaine agricole. Zaghouan est une ville calme, où il fait bon vivre.",
       "p2":"La ville est connue entre autres choses pour ses roses, notamment l'églantier (ancêtre botanique de la rose), qui étaient cultivées par les musulmans andalous (Morisques) chassés d'Espagne au 17ème siècle lors de la Reconquista.",
       "p3":"Zaghouan, attire aussi bien les Tunisiens que les touristes du monde arabe par ses hammams.",
       "star": 4.73,
-      "price": "45 TND "
+      "price": "45 TND ",
+      "url":"https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Zaghouan/",
+      "images":["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg"]
+
     },
     {
       "id":4,
@@ -47,7 +53,9 @@
       "p2":"Ce village dispose d’une variété des circuits pour les randonneurs plus ou moins expérimentés, et d’une vue imprenable pour tous les amoureux de la nature.",
       "p3":"Nous vous invitons à nous rejoindre au Randonné foret Rtiba pour découvrir ce endroit ensemble , Profitez pleinement de la bonne compagnie .",
       "star": 4.73,
-      "price": "45 TND "
+      "price": "45 TND ",
+      "url":"https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Nabeul/",
+      "images":["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg"]
     },
     {
       "id":5,
@@ -59,7 +67,9 @@
       "p2":"Il flotte à Kairouan une atmosphère des siècles passés. Le temps semble s’être arrêté sur le vieux cimetière médiéval au pied des remparts, ou dans les ruelles silencieuses et les souks recouverts de voûtes.",
       "p3":"Dans le labyrinthe de la vieille ville, vous ressentirez toute l’émouvante simplicité des maisons blanchies à la chaux, caressées par la lumière du Sud.",
       "star": 4.73,
-      "price": "45 TND "
+      "price": "45 TND ",
+      "url":"https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Kairouan/",
+      "images":["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg"]
     },
     {
       "id":6,
@@ -71,7 +81,9 @@
       "p2":"Les lacs de Bizerte, Ichkeul et Ghar El Melh constituent les plus grandes spécificités naturelles du gouvernorat, en plus de l’île de Jalta, riche par la beauté de ses paysages et ses réserves de poissons, le Cap Blanc, le point le plus au Nord de l’Afrique et le fleuve de Mejerda qui arrose par ses eaux, coulant toute l’année, de très vastes terrains agricoles.",
       "p3":"Les importantes spécificités de la ville de Bizerte sont le vieux port antique et le pont mobile qui assure la circulation entre les deux rives du Canal de Bizerte.",
       "star": 4.73,
-      "price": "45 TND "
+      "price": "45 TND ",
+      "url":"https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Bizerte/",
+      "images":["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","20.jpg","21.jpg"]
     },
     {
       "id":7,
@@ -83,7 +95,9 @@
       "p2":"Elle est délimitée au nord par la mer Méditerranée, au sud par le cours de la Medjerda, à l'ouest par la région d'El Kala dans la wilaya algérienne d'El Tarf et à l'est par la région de Sejnane dans le gouvernorat de Bizerte.",
       "p3":"La région est couverte de forêts extensives de chênes-lièges et de chênes zéens. Elle compte deux parcs nationaux où la faune, la flore et le milieu naturel sont protégés : le parc national d'El Feija dans le gouvernorat de Jendouba et le parc national d'El-Kala dans la wilaya d'El Tarf. Cela s'explique par le fait que la région est l'une des plus humides du Maghreb, avec une pluviométrie de 1 000 à 1 500 millimètres par an",
       "star": 4.73,
-      "price": "45 TND "
+      "price": "45 TND ",
+      "url":"https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Jendouba/",
+      "images":["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg"]
     },
     {
       "id":8,
@@ -95,7 +109,9 @@
       "p2":"Sousse est connue pour ses trois mille ans d'histoire, mais aussi pour ses oliveraies, sa production textile et son tourisme. Elle a su garder une certaine authenticité alors que des milliers de visiteurs la visitent chaque année.",
       "p3":"Les infrastructures ne manquent pas pour accueillir les visiteurs, qu'il s'agisse d'hébergements, de restauration, d'activités sportives, ludiques ou culturelles. Gâtée par le climat, la ville propose aussi des centres de thalassothérapie prodiguant soins et cures à tous ceux qui en ont besoin, ou envie !",
       "star": 4.73,
-      "price": "45 TND "
+      "price": "45 TND ",
+      "url":"https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Sousse/",
+      "images":["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg"]
     }
     
   ]
