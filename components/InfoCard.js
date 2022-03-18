@@ -10,7 +10,9 @@ function InfoCard({img,location,title,description,start,price,star,id}) {
     router.push({
       pathname:"/info",
       query:{
-        idr:id
+        id:id,
+        title:title,
+        location:location
       },
     })
   }
