@@ -3,41 +3,57 @@ import { format } from 'date-fns'
 import React from 'react'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import InfoCard from "../components/InfoCard"
+import InfoCard from '../components/InfoCard'
 function search({ searchResults }) {
   const router = useRouter()
-  const { location, startDate, endDate, noOfGuests } = router.query
-  const formattedStartDate = format(new Date(startDate), 'dd/MM/yyyy')
-  const formattedEndDate = format(new Date(endDate), 'dd/MM/yyyy')
-  const range = `${formattedStartDate} - ${formattedEndDate}`
-
+  const { location } = router.query
+  var rlocation=""
+  if(!location){
+    rlocation="All"
+  }else{
+    rlocation=location[0].toUpperCase() + location.slice(1)
+  }
 
   
 
-
   return (
     <div>
-      <Header placeholder={` ${location} | $(range) | ${noOfGuests}  guests`} />
+      <Header placeholder={`${location}`} />
       <main className="flex">
         <section className="flex-grow px-6 pt-14">
-          <p className="text-xs-small">
-            300+ Stays - {range} - for {noOfGuests} guests
-          </p>
+          <p className="text-xs-small">{
+            searchResults.filter(item=> item.location === (rlocation==="All"?item.location:rlocation) ).length
+
+          } Sorties trouvées</p>
           <h1 className="mt-2 mb-6 text-3xl font-semibold">
             Stays in {location}
           </h1>
-          <div className="text-gr* mb-5 hidden space-x-3 whitespace-nowrap lg:inline-flex">
-            <p className="button">Cancellation Flexibility</p>
-            <p className="button">Type of Place</p>
-            <p className="button">Price</p>
-            <p className="button">Rooms and Beds</p>
-            <p className="button">More filters</p>
-          </div>
 
-          <div className='flex flex-col'>
-          {searchResults.map(({img,location,title,description,start,price,total,star,id}) => (
-            <InfoCard img={img} location={location} title={title} description={description} start={start} price={price} star={star} id={id} />
-          ))}
+          <div className="flex flex-col">
+            {searchResults.filter(item=> item.location === (rlocation==="All"?item.location:rlocation) ).map(
+              ({
+                img,
+                location,
+                title,
+                description,
+                start,
+                price,
+                total,
+                star,
+                id,
+              }) => (
+                <InfoCard
+                  img={img}
+                  location={location}
+                  title={title}
+                  description={description}
+                  start={start}
+                  price={price}
+                  star={star}
+                  id={id}
+                />
+              )
+            )}
           </div>
         </section>
       </main>
@@ -46,15 +62,15 @@ function search({ searchResults }) {
   )
 }
 
-export default search;
+export default search
 
 export async function getServerSideProps() {
-  const searchResults = await fetch('https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/rondodata.json').then(
-    (res) => res.json()
-  );
+  const searchResults = await fetch(
+    'https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/rondodata.json'
+  ).then((res) => res.json())
   return {
     props: {
       searchResults,
     },
-  };
+  }
 }
