@@ -16,18 +16,17 @@ import Login from '../components/Login'
 
 import Popup from 'reactjs-popup'
 import 'reactjs-popup/dist/index.css'
-import { useEffect } from "react";
+import { useEffect } from 'react'
 
 function Header({ placeholder }) {
   const [searchInput, setSearchInput] = useState('')
-  const [logged, setLogged] = useState("false")
+  const [logged, setLogged] = useState('false')
   useEffect(() => {
     // Perform localStorage action
-    localStorage.getItem('logged')==="True"
-    ? setLogged("True")
-    : setLogged("false")
+    localStorage.getItem('logged') === 'True'
+      ? setLogged('True')
+      : setLogged('false')
   }, [])
-
 
   if (placeholder === 'undefined') {
     placeholder = 'All'
@@ -42,17 +41,27 @@ function Header({ placeholder }) {
       },
     })
   }
-  const deconnect=() =>{
-    localStorage.setItem("logged", "False");
-        window.location.reload()
+
+  const contact = () => {
+    router.push({
+      pathname: '/contact',
+    })
+  }
+
+  const deconnect = () => {
+    localStorage.setItem('logged', 'False')
+    window.location.reload()
   }
   const checkLog = () => {
-    if (logged === "True") {
+    if (logged === 'True') {
       return (
-        <div onClick={deconnect} className="flex items-center justify-end space-x-4 text-gray-500">
+        <div
+          onClick={deconnect}
+          className="flex items-center justify-end space-x-4 text-gray-500"
+        >
           <div className="flex items-center space-x-2 rounded-full border-2 p-2">
-            <p className="hidden cursor-pointer md:inline">Deconnexion</p>
-            <UserCircleIcon className="h-6 cursor-pointer" />
+            <p className="cursor-pointer md:inline">Deconnexion</p>
+            <UserCircleIcon className="hidden md:block h-6 cursor-pointer" />
           </div>
         </div>
       )
@@ -106,7 +115,16 @@ function Header({ placeholder }) {
       </div>
 
       {/* right */}
-      {checkLog()}
+      <div
+        onClick={contact}
+        className="flex items-center justify-end space-x-4 text-gray-500"
+      >
+        <div className="hidden md:block flex items-center space-x-2 rounded-full border-2 p-2">
+          <p className=" cursor-pointer md:inline px-1">Contact</p>
+        </div>
+
+        {checkLog()}
+      </div>
     </header>
   )
 }
