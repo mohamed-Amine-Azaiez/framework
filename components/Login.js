@@ -13,7 +13,7 @@ function Login() {
     }
     
   return (
-    <div className="pt-5">
+    <div className="pt-5 text-center">
       <div className="mb-6 md:flex md:items-center">
         <div className="">
           <input

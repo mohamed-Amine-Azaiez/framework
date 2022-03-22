@@ -26,6 +26,16 @@ function Header({ placeholder }) {
     localStorage.getItem('logged') === 'True'
       ? setLogged('True')
       : setLogged('false')
+
+    var style = document.createElement('style')
+    style.innerHTML = `
+  [role=tooltip].popup-content {
+    width: 170px;
+    box-shadow: 0 0 3px rgb(0 0 0 / 16%);
+    border-radius: 5px;
+}
+  `
+    document.head.appendChild(style)
   }, [])
 
   if (placeholder === 'undefined') {
@@ -52,17 +62,30 @@ function Header({ placeholder }) {
     localStorage.setItem('logged', 'False')
     window.location.reload()
   }
+  const dash =() =>{
+    router.push({
+      pathname: '/dashboard',
+    })
+  }
+
   const checkLog = () => {
     if (logged === 'True') {
       return (
-        <div
-          onClick={deconnect}
-          className="flex items-center justify-end space-x-4 text-gray-500"
-        >
-          <div className="flex items-center space-x-2 rounded-full border-2 p-2">
-            <p className="cursor-pointer md:inline">Deconnexion</p>
-            <UserCircleIcon className="hidden md:block h-6 cursor-pointer" />
-          </div>
+        <div className="flex items-center justify-end space-x-4 text-gray-500">
+          <Popup
+            trigger={
+              <div className="flex items-center space-x-2 rounded-full border-2 p-2">
+                <p className="hidden cursor-pointer md:inline">Compte</p>
+                <UserCircleIcon className="h-6 cursor-pointer" />
+              </div>
+            }
+            position="bottom center"
+          >
+            <div className="text-center pb-4 font-semibold">
+              <p onClick={dash} className="cursor-pointer my-2 pb-2 border-b-2">Dashboard</p>
+              <p onClick={deconnect} className="cursor-pointer">Deconnexion</p>
+            </div>
+          </Popup>
         </div>
       )
     } else {
@@ -119,8 +142,8 @@ function Header({ placeholder }) {
         onClick={contact}
         className="flex items-center justify-end space-x-4 text-gray-500"
       >
-        <div className="hidden md:block flex items-center space-x-2 rounded-full border-2 p-2">
-          <p className=" cursor-pointer md:inline px-1">Contact</p>
+        <div className="flex hidden items-center space-x-2 rounded-full border-2 p-2 md:block">
+          <p className=" cursor-pointer px-1 md:inline">Contact</p>
         </div>
 
         {checkLog()}
