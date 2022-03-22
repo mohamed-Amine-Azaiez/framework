@@ -1,10 +1,41 @@
-import React from 'react'
+import { useRouter } from 'next/router'
+import React, { useEffect } from 'react'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 
 function dashboard({ searchResults }) {
 
-    const dt = new Date().toLocaleDateString("fr-FR")
+    const router = useRouter()
+
+
+    useEffect(() => {
+        // Perform localStorage action
+        if(localStorage.getItem('logged') !== 'True'){
+            window.location.replace("/")
+        }
+      }, [])
+
+    const dt = new Date().toLocaleDateString("en-US").toString()
+
+
+    function dateCompare(d1, d2){
+        const date1 = new Date(d1).toLocaleDateString("en-US");
+        const date2 = new Date(d2).toLocaleDateString("en-US");
+
+        const date1fr = new Date(d1).toLocaleDateString("fr-FR");
+        const date2fr = new Date(d2).toLocaleDateString("fr-FR");
+
+        if(date1 > date2){
+            return "active"
+        } else if(date1 < date2){
+            return "expired"
+        } else{
+            return "today"
+        }
+    }
+    
+    
+    
     
   return (
     <div>
@@ -27,7 +58,7 @@ function dashboard({ searchResults }) {
                 <td className="... border border-slate-700">{item.title}</td>
                 <td className="... border border-slate-700">{item.location}</td>
                 <td className="... border border-slate-700">{item.Date}</td>
-                <td className="... border border-slate-700">{item.Date>dt?"Active":"Expirée"}</td>
+                <td className="... border border-slate-700">{dateCompare(item.Date, dt)}</td>
                 <td className="... border border-slate-700 flex justify-around ">
                     <p>Modifier</p>
                     <p>Supprimer</p>
