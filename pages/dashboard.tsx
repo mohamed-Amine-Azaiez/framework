@@ -26,15 +26,28 @@ function dashboard({ searchResults }) {
         const date2fr = new Date(d2).toLocaleDateString("fr-FR");
 
         if(date1 > date2){
-            return "active"
+            return "Active"
         } else if(date1 < date2){
-            return "expired"
+            return "Expired"
         } else{
-            return "today"
+            return "Today"
         }
     }
     
-    
+    const edit = (item) => {
+        router.push({
+            pathname: '/ajouter',
+            query: {
+              rtitle: item.title,
+              rlocation:item.location,
+              rdescription:item.description,
+              rp1:item.p1,
+              rp2:item.p2,
+              rp3:item.p3,
+              rprix:item.price
+            },
+          })
+    }
     
     
   return (
@@ -57,11 +70,11 @@ function dashboard({ searchResults }) {
               <tr key={item.id}>
                 <td className="... border border-slate-700">{item.title}</td>
                 <td className="... border border-slate-700">{item.location}</td>
-                <td className="... border border-slate-700">{item.Date}</td>
+                <td className="... border border-slate-700">{new Date(item.Date).toLocaleDateString("fr-FR")}</td>
                 <td className="... border border-slate-700">{dateCompare(item.Date, dt)}</td>
                 <td className="... border border-slate-700 flex justify-around ">
-                    <p>Modifier</p>
-                    <p>Supprimer</p>
+                    <p onClick={()=>edit(item)} className='cursor-pointer hover:font-bold'>Modifier</p>
+                    <p className='cursor-pointer hover:font-bold'>Supprimer</p>
                 </td>
               </tr>
             ))}

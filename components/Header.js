@@ -7,9 +7,6 @@ import {
   UserIcon,
 } from '@heroicons/react/solid'
 import { useState } from 'react'
-import 'react-date-range/dist/styles.css' // main style file
-import 'react-date-range/dist/theme/default.css' // theme css file
-import { DateRangePicker } from 'react-date-range'
 import { useRouter } from 'next/dist/client/router'
 
 import Login from '../components/Login'
@@ -67,6 +64,11 @@ function Header({ placeholder }) {
       pathname: '/dashboard',
     })
   }
+  const add =() =>{
+    router.push({
+      pathname: 'ajouter',
+    })
+  }
 
   const checkLog = () => {
     if (logged === 'True') {
@@ -83,6 +85,7 @@ function Header({ placeholder }) {
           >
             <div className="text-center pb-4 font-semibold">
               <p onClick={dash} className="cursor-pointer my-2 pb-2 border-b-2">Dashboard</p>
+              <p onClick={add} className="cursor-pointer my-2 pb-2 border-b-2">Ajouter</p>
               <p onClick={deconnect} className="cursor-pointer">Deconnexion</p>
             </div>
           </Popup>
