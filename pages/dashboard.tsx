@@ -2,7 +2,8 @@ import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-
+import LargeCard from '../components/LargeCard'
+import bg4 from "../data/img/bg4.jpg"
 function dashboard({ searchResults }) {
 
     const router = useRouter()
@@ -56,12 +57,13 @@ function dashboard({ searchResults }) {
   return (
     <div>
       <Header placeholder={''} />
-      <div className="mx-auto max-w-7xl px-8 py-20 sm:px-16">
-        <h3 className="mb-3 w-64 text-4xl font-bold">Dashboard</h3>
-        <table className="my-[100px] w-full border-collapse border border-slate-500">
+      <div className="mx-auto max-w-7xl px-8 sm:px-16">
+      <LargeCard img={bg4} title="Dashboard" description="" buttonText="Ajouter Nouveau" url="ajouter" />
+        
+        <table className=" w-full border-collapse border border-slate-500">
           <thead>
             <tr>
-              <th className="... border border-slate-600">Randonnée</th>
+              <th className="... border border-slate-600 ">Randonnée</th>
               <th className="... border border-slate-600">Ville</th>
               <th className="... border border-slate-600">Date</th>
               <th className="... border border-slate-600">Etat</th>
@@ -77,7 +79,7 @@ function dashboard({ searchResults }) {
                 <td className="... border border-slate-700">{dateCompare(item.Date, dt)}</td>
                 <td className="... border border-slate-700 flex justify-around ">
                     <p onClick={()=>edit(item)} className='cursor-pointer hover:font-bold'>Modifier</p>
-                    <p onClick={()=>sup(item)} className='cursor-pointer hover:font-bold'>Supprimer</p>
+                    <p onClick={()=>sup(item)} className='cursor-pointer hover:font-bold text-red-600'>Supprimer</p>
                 </td>
               </tr>
             ))}

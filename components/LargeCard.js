@@ -1,11 +1,11 @@
 import Image from "next/image"
 import {useRouter} from "next/dist/client/router"
-function LargeCard({img,title,description,buttonText}) {
+function LargeCard({img,title,description,buttonText,url}) {
 
   const router = useRouter();
   const search = () => {
     router.push({
-      pathname:"/search",
+      pathname:"/"+url,
     })
   }
   const checkbtn =() => {

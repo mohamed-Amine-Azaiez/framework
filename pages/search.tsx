@@ -24,9 +24,7 @@ function search({ searchResults }) {
             searchResults.filter(item=> item.location === (rlocation==="All"?item.location:rlocation) ).length
 
           } Sorties trouvées</p>
-          <h1 className="mt-2 mb-6 text-3xl font-semibold">
-            Stays in {location}
-          </h1>
+          
 
           <div className="flex flex-col">
             {searchResults.filter(item=> item.location === (rlocation==="All"?item.location:rlocation) ).map(
