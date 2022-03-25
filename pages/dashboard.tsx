@@ -1,12 +1,12 @@
 import { useRouter } from 'next/router'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 
 function dashboard({ searchResults }) {
 
     const router = useRouter()
-
+    const [list, updateList] = useState(searchResults);
 
     useEffect(() => {
         // Perform localStorage action
@@ -28,9 +28,9 @@ function dashboard({ searchResults }) {
         if(date1 > date2){
             return "Active"
         } else if(date1 < date2){
-            return "Expired"
+            return "Expirée"
         } else{
-            return "Today"
+            return "Aujourd'hui"
         }
     }
     
@@ -47,6 +47,9 @@ function dashboard({ searchResults }) {
               rprix:item.price
             },
           })
+    }
+    const sup =(it) =>{
+      updateList(list.filter(item => item !== it));
     }
     
     
@@ -66,7 +69,7 @@ function dashboard({ searchResults }) {
             </tr>
           </thead>
           <tbody>
-            {searchResults.map((item) => (
+            {list.map((item) => (
               <tr key={item.id}>
                 <td className="... border border-slate-700">{item.title}</td>
                 <td className="... border border-slate-700">{item.location}</td>
@@ -74,7 +77,7 @@ function dashboard({ searchResults }) {
                 <td className="... border border-slate-700">{dateCompare(item.Date, dt)}</td>
                 <td className="... border border-slate-700 flex justify-around ">
                     <p onClick={()=>edit(item)} className='cursor-pointer hover:font-bold'>Modifier</p>
-                    <p className='cursor-pointer hover:font-bold'>Supprimer</p>
+                    <p onClick={()=>sup(item)} className='cursor-pointer hover:font-bold'>Supprimer</p>
                 </td>
               </tr>
             ))}

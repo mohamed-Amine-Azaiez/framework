@@ -18,6 +18,13 @@ function ajouter() {
 
   var isActive=true
 
+
+  useEffect(() => {
+    // Perform localStorage action
+    if(localStorage.getItem('logged') !== 'True'){
+        window.location.replace("/")
+    }
+  }, [])
   if(rtitle){
     isActive=false
   }

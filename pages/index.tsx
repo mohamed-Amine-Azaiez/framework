@@ -19,7 +19,7 @@ export default function Home({ exploreData, cardsData }) {
       <Banner img={bg1} />
       <main className="mx-auto max-w-7xl px-8 sm:px-16">
         <section className="pt-6">
-          <h2 className="text-4xl font-semibold"> Explore Nearby</h2>
+          <h2 className="text-4xl font-semibold"> Explorer à proximité</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {exploreData?.map(({ img, distance, location }) => (
               <SmallCard
@@ -32,7 +32,7 @@ export default function Home({ exploreData, cardsData }) {
           </div>
         </section>
         <section>
-          <h2 className="py-8 text-4xl font-semibold">Live Anywhere</h2>
+          <h2 className="py-8 text-4xl font-semibold">Advantage</h2>
 
           <div className='flex space-x-11 overflow-scroll scrollbar-hide p-3 -ml-3'>
           {cardsData?.map(({img,title}) => (
@@ -41,7 +41,7 @@ export default function Home({ exploreData, cardsData }) {
           </div>
         </section>
         <section></section>
-        <LargeCard img={bg2} title="You Don't Know Where To Go ?" description="" buttonText="Get Inspired" />
+        <LargeCard img={bg2} title="Vous Ne Savez Pas Où Aller ?" description="" buttonText="Get Inspired" />
       </main>
       <Footer  />
       

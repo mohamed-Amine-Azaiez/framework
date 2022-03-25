@@ -13,9 +13,9 @@ function Banner({img}) {
         <Image src={img} layout="fill" objectFit="cover" />
         <div className="absolute top-1/2 w-full text-center">
             <p className="text-sm sm:text-lg font-bold">
-                Not sure where to go?
+            Vous ne savez pas où aller ?
             </p>
-            <button onClick={search} className="text-purple-500 bg-white px-10 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150">Get Inspired</button> 
+            <button onClick={search} className="text-[#4BB543] bg-white px-10 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150">Get Inspired</button> 
         </div>
     </div>
   )

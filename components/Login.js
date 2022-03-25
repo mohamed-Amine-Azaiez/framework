@@ -13,7 +13,7 @@ function Login() {
     }
     
   return (
-    <div className="pt-5 text-center">
+    <form className="pt-5 text-center">
       <div className="mb-6 md:flex md:items-center">
         <div className="">
           <input
@@ -41,12 +41,12 @@ function Login() {
         <button
         onClick={loginfunc}
           className="focus:shadow-outline rounded bg-purple-500 py-2 px-4 font-bold text-white shadow hover:bg-purple-400 focus:outline-none"
-          type="button"
+          type="submit"
         >
           Connexion
         </button>
       </div>
-    </div>
+    </form>
   )
 }
 

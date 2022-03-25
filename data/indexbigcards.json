@@ -1,5 +1,5 @@
 [
-  { "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/PhysicalExercise.jpg", "title": "Physical Exercise " },
-  { "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/MentalHealth.jpg", "title": "Mental Health" },
-  { "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/RelationalHealth.jpg", "title": "Relational Health" }
+  { "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/PhysicalExercise.jpg", "title": "Exercice physique" },
+  { "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/MentalHealth.jpg", "title": "Santé mentale" },
+  { "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/RelationalHealth.jpg", "title": "Santé relationnelle" }
 ]
