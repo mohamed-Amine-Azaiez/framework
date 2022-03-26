@@ -10,7 +10,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/dist/client/router'
 
 import Login from '../components/Login'
-
+import logo from "../data/img/logo.png"
 import Popup from 'reactjs-popup'
 import 'reactjs-popup/dist/index.css'
 import { useEffect } from 'react'
@@ -118,10 +118,12 @@ function Header({ placeholder }) {
         className="relative my-auto flex h-10 cursor-pointer items-center"
       >
         <Image
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/2560px-Airbnb_Logo_Bélo.svg.png"
-          layout="fill"
+          src={logo}
+          layout=""
           objectFit="contain"
           objectPosition="left"
+          height="120px"
+          
         />
       </div>
 
