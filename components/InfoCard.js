@@ -3,7 +3,7 @@ import { StarIcon } from "@heroicons/react/solid"
 import Image from "next/image"
 import {useRouter} from "next/dist/client/router"
 
-function InfoCard({img,location,title,description,start,price,star,id}) {
+function InfoCard({img,location,title,description,start,price,star,id,date}) {
   const router = useRouter();
 
   const moreinfo = () => {
@@ -12,10 +12,24 @@ function InfoCard({img,location,title,description,start,price,star,id}) {
       query:{
         id:id,
         title:title,
-        location:location
+        location:location,
       },
     })
   }
+  const dt = new Date().toLocaleDateString("en-US").toString()
+  function dateCompare(d1, d2){
+    const date1 = new Date(d1).toLocaleDateString("en-US");
+    const date2 = new Date(d2).toLocaleDateString("en-US");
+
+
+    if(date1 > date2){
+        return (new Date(d1).toLocaleDateString("fr-FR"))
+    } else if(date1 < date2){
+        return "Expirée"
+    } else{
+        return "Aujourd'hui"
+    }
+}
 
   return (
     <div onClick={moreinfo} className="flex py-7 px-2 border-b cursor-pointer hover:opacity-80 hover:shadow-lg transition duration-200 ease-out first:border-t">
@@ -31,8 +45,9 @@ function InfoCard({img,location,title,description,start,price,star,id}) {
         <div className="border-b w-10 pt-2"></div>
         <p className="text-sm pt-2 text-gray-500 flex-grow">{description}</p>
         <div className="flex justify-between items-end pt-5">
-          <p className="flex">
-            
+          <div></div>
+          <p className="flex text-lg font-semibold pb-2 lg:text-2xl">
+          Date: {dateCompare(date, dt)}
           </p>
 
         </div>

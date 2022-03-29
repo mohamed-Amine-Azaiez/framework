@@ -1,3 +1,4 @@
+import { tr } from 'date-fns/locale'
 import { useRouter } from 'next/dist/client/router'
 import React from 'react'
 import Footer from '../components/Footer'
@@ -13,7 +14,6 @@ function search({ searchResults }) {
     rlocation=location[0].toUpperCase() + location.slice(1)
   }
 
-  
 
   return (
     <div>
@@ -37,6 +37,7 @@ function search({ searchResults }) {
                 price,
                 total,
                 star,
+                Date,
                 id,
               }) => (
                 <InfoCard
@@ -48,6 +49,7 @@ function search({ searchResults }) {
                   price={price}
                   star={star}
                   id={id}
+                  date={Date}
                 />
               )
             )}

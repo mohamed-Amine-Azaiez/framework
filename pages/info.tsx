@@ -25,7 +25,7 @@ function info({ rondoinfo }) {
           <div className="flex flex-col">
             {rondoinfo
               .filter((item) => item.id === idr)
-              .map(({ img, p1, p2, p3, location, title, price, id }) => (
+              .map(({ img, p1, p2, p3, location, title, price, id,Date }) => (
                 <Place
                   img={img}
                   location={location}
@@ -35,6 +35,7 @@ function info({ rondoinfo }) {
                   p3={p3}
                   price={price}
                   id={id}
+                  date={Date}
                 />
               ))}
             

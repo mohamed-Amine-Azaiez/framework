@@ -23,8 +23,6 @@ function dashboard({ searchResults }) {
         const date1 = new Date(d1).toLocaleDateString("en-US");
         const date2 = new Date(d2).toLocaleDateString("en-US");
 
-        const date1fr = new Date(d1).toLocaleDateString("fr-FR");
-        const date2fr = new Date(d2).toLocaleDateString("fr-FR");
 
         if(date1 > date2){
             return "Active"

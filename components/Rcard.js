@@ -1,8 +1,21 @@
 import { HeartIcon } from "@heroicons/react/outline"
 import Image from "next/image"
 
-function Rcard({img,p1,p2,p3,price}) {
+function Rcard({img,p1,p2,p3,price,date}) {
+  const dt = new Date().toLocaleDateString("en-US").toString()
+  function dateCompare(d1, d2){
+    const date1 = new Date(d1).toLocaleDateString("en-US");
+    const date2 = new Date(d2).toLocaleDateString("en-US");
 
+
+    if(date1 > date2){
+        return (new Date(d1).toLocaleDateString("fr-FR"))
+    } else if(date1 < date2){
+        return "Expirée"
+    } else{
+        return "Aujourd'hui"
+    }
+}
 
 
 
@@ -19,7 +32,13 @@ function Rcard({img,p1,p2,p3,price}) {
         <p className="text-sm pt-2 text-gray-500 flex-grow">{p1}</p>
         <p className="text-sm pt-2 text-gray-500 flex-grow">{p2}</p>
         <p className="text-sm pt-2 text-gray-500 flex-grow">{p3}</p>
-        
+        <div className="flex justify-between items-end pt-5">
+          <div></div>
+          <p className="flex text-lg font-semibold pb-2 lg:text-2xl">
+          Date: {dateCompare(date, dt)}
+          </p>
+
+        </div>
       </div>
     </div>
   )
