@@ -30,6 +30,38 @@
   {
     "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Soussa.jpg",
     "location": "Sousse"
+  },
+  {
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Djerba.jpg",
+    "location": "Djerba"
+  },
+  {
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Medenine.jpg",
+    "location": "Medenine"
+  },
+  {
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Zaghouan.jpg",
+    "location": "Zaghouan"
+  },
+  {
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Nabeul.jpg",
+    "location": "Nabeul"
+  },
+  {
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Kairouan.jpg",
+    "location": "Kairouan"
+  },
+  {
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Bizerte.jpg",
+    "location": "Bizerte"
+  },
+  {
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Jendouba.jpg",
+    "location": "Jendouba"
+  },
+  {
+    "img": "https://raw.githubusercontent.com/mohamed-Amine-Azaiez/framework/main/data/img/Soussa.jpg",
+    "location": "Sousse"
   }
 
 ]
