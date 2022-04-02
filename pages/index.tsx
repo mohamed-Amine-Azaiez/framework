@@ -41,7 +41,7 @@ export default function Home({ exploreData, cardsData }) {
           </div>
         </section>
         <section></section>
-        <LargeCard img={bg2} title="Vous Ne Savez Pas Où Aller ?" description="" buttonText="Get Inspired" url="search" />
+        <LargeCard img={bg2} title="Vous Ne Savez Pas Où Aller ?" description="" buttonText="Cliquez ici" url="search" />
       </main>
       <Footer  />
       

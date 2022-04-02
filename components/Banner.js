@@ -15,7 +15,7 @@ function Banner({img}) {
             <p className="text-sm sm:text-lg font-bold">
             Vous ne savez pas où aller ?
             </p>
-            <button onClick={search} className="text-[#4BB543] bg-white px-10 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150">Get Inspired</button> 
+            <button onClick={search} className="text-[#4BB543] bg-white px-10 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150">Cliquez ici</button> 
         </div>
     </div>
   )
